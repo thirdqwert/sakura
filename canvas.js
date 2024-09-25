@@ -52,8 +52,8 @@ function getSakura(i) {
         let radius = Math.random() * (20 - 10) + 10
         let x = Math.random() * innerWidth
         let y = -(Math.random() * innerHeight)
-        let dx = 1
-        let dy = Math.random() * (0.8 - 0.2) + 0.2
+        let dx = 0.9
+        let dy = Math.random() * (2 -1) + 1
         let direction = Math.floor(Math.random() * 100)
         let rgb = `rgb(${Math.floor(Math.random() * (255 - 128) + 128)},${Math.floor(Math.random() * (255 - 128) + 128)},${Math.floor(Math.random() * (255 - 128) + 128)})`;
         allSakura.push(new Circle(x, y, dx, dy, rgb, radius, direction))
