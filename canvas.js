@@ -48,7 +48,7 @@ function Circle(x, y, dx, dy, rgb, radius, direction) {
     }
 }
 function getSakura(i) {
-    for (i; i < 30; i++) {
+    for (i; i < 40; i++) {
         let radius = Math.random() * (20 - 10) + 10
         let x = Math.random() * innerWidth
         let y = -(Math.random() * innerHeight)
