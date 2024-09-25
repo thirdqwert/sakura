@@ -33,10 +33,10 @@ function Circle(x, y, dx, dy, rgb, radius, direction) {
             console.log(allSakura);
             getSakura(allSakura.length)
         }
-        if (this.direction < 70) {
+        if (this.direction < 60) {
             this.x = this.x + this.dx
         }
-        else if ( 70 < this.direction < 90) {
+        else if ( 60 < this.direction < 70) {
             
         }
         else {
@@ -53,7 +53,7 @@ function getSakura(i) {
         let x = Math.random() * innerWidth
         let y = -(Math.random() * innerHeight)
         let dx = 1
-        let dy = Math.random() * 1
+        let dy = Math.random() * (0.8 - 0.2) + 0.2
         let direction = Math.floor(Math.random() * 100)
         let rgb = `rgb(${Math.floor(Math.random() * (255 - 128) + 128)},${Math.floor(Math.random() * (255 - 128) + 128)},${Math.floor(Math.random() * (255 - 128) + 128)})`;
         allSakura.push(new Circle(x, y, dx, dy, rgb, radius, direction))
